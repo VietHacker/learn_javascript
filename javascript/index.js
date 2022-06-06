@@ -15,5 +15,5 @@ a=[
 
 let a2= a.map(x=>x.name+'a')
 console.log(a2)
-
+ 
 
