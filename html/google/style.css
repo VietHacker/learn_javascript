@@ -1,0 +1,6 @@
+body{
+    background-image: url('https://picsum.photos/id/237/200/300');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
