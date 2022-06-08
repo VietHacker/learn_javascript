@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
 
 *{
     font-family: 'Roboto', sans-serif;
@@ -6,6 +6,26 @@
 
 body{
     background-color: #F0F2F5;
+   
+}
+.container{
+    display: flex;
+    align-items: center;
+    margin-left: 10%;
+    margin-right: 10%;
+    height: 100vh;
+}
+.content{
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    margin:auto;
+}
+.left{
+    width: 60%;
+}
+.right{
+    flex-grow: 40%;
 }
 .blue{
     color: #1A77F2;
@@ -22,10 +42,11 @@ body{
 .box{
     background-color: white;
     padding: 10px;
-    width: 30%;
-    height: 60%;
     border-radius: 10px;
     box-shadow: 0 4px 7px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 input{
@@ -70,9 +91,12 @@ input{
     color: white;
     border: 0;
     border-radius: 7px;
-    margin-left: 120px;
+    margin:auto;
     margin-top: 10px;
-    margin-bottom: 10px;    
+    margin-bottom: 10px;
+    font-size: auto;
+    width: 70%;    
+
 }
 .hr{
     margin:0;
