@@ -11,14 +11,16 @@
     <div class="container">
         <div class="content">
             <div class="number">
-                <p> 00 </p>
+                <p id="number1"> 00 </p>
             </div>
             <div class="lightbox">
-                <div class="light" style="background-color: red;"></div>
-                <div class="light" style="background-color: yellow; margin-top: 10px; margin-bottom: 10px;"></div>
-                <div class="light" style="background-color: green;"></div>
+                <div class="light" id="redlight" ></div>
+                <div class="light" id="yellowlight"  margin-top: 10px; margin-bottom: 10px;"></div>
+                <div class="light" id="greenlight" ></div>
             </div>
+            <button id="plus1" onclick="stopInterval()">Stop</button>
         </div>
     </div>
+    <script src="script.js"></script>
 </body>
 </html>
