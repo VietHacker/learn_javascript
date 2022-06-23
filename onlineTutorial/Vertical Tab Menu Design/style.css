@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2?family=Anek+Latin:wght@300&family=Anek+Malayalam:wght@300&family=Dosis&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Anek Latin', sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: black;
+}
+.content{
+    position: relative;
+    width: 70px;
+    height: 350px;
+    background: white;
+    border-radius: 35px;
+    box-shadow: 0 15px 25px rgba(0,0,0,0.1);
+}
+.content ul{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.content ul li{
+    position: relative;
+    list-style: none;
+    width: 70px;
+    height: 70px;
+    z-index: 1;
+}
+.content ul li a{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+    color: black;
+    font-weight: 500;
+}
+.content ul li a .icon{
+    position: relative;
+    display: block;
+    line-height: 75px;
+    text-align: center;
+    transition: 0.5s;
+}
+.content ul li.active a .icon{
+    color: white;
+}
+.content ul li a .icon i{
+    font-size: 24px;
+}
+.content ul li a .title{
+    position: absolute;
+    top: 50%;
+    left: 110px;
+    background: white;
+    transform: translateY(-50%);
+    padding: 5px 10px;
+    border-radius: 6px;
+    transition: 0.5s;
+    box-shadow: 0.5px rgba(0,0,0,0.1);
+    opacity: 0;
+    visibility: hidden;
+}
+.content ul li:hover a .title{
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(-25%) translateY(-50%)
+}
+.content ul li a .title::before{
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 12px;
+    background: white;
+    left: -10px;
+    top: 46%;
+    transform: rotate(45deg) translateY(-50%);
+    border-radius: 2px;
+}
+.content ul .indicator{
+    position: absolute;
+    left: 0;
+    width: 70px;
+    height: 70px;
+    transition: 0.5s;
+}
+.content ul .indicator::before{
+    content: '';
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 50px;
+    height: 50px;
+    background: black;
+    border-radius: 50%;
+    transition: 0.5s;
+}
+.content ul li:nth-child(1).active ~ .indicator{
+    transform: translateY(0px);
+}
+.content ul li:nth-child(1).active ~ .indicator::before{
+    background: darkblue;
+}
+.content ul li:nth-child(2).active ~ .indicator{
+    transform: translateY(70px);
+}
+.content ul li:nth-child(2).active ~ .indicator::before{
+    background: darkgreen;
+}
+.content ul li:nth-child(3).active ~ .indicator{
+    transform: translateY(140px);
+}.content ul li:nth-child(3).active ~ .indicator::before{
+    background: darkcyan;
+}
+.content ul li:nth-child(4).active ~ .indicator{
+    transform: translateY(210px);
+}.content ul li:nth-child(4).active ~ .indicator::before{
+    background: darkmagenta;
+}
+.content ul li:nth-child(5).active ~ .indicator{
+    transform: translateY(280px);
+}.content ul li:nth-child(5).active ~ .indicator::before{
+    background: darkred;
+}
