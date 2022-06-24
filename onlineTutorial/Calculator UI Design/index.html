@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>May tinh</title>
+</head>
+<body>
+    <div class="container">
+        <form class="content" name="calc">
+            <input type="text" class="number" readonLyname = "txt">
+            <span class="num" onclick="calc.txt.number+=''"><i>C</i></span>
+            <span class="num" onclick="calc.txt.number+=''"><i>/</i></span>
+            <span class="num" onclick="calc.txt.number+='*'"><i>*</i></span>
+            <span class="num" onclick="calc.txt.number+='7'"><i>7</i></span>
+            <span class="num" onclick="calc.txt.number+='8'"><i>8</i></span>
+            <span class="num" onclick="calc.txt.number+='9'"><i>9</i></span>
+            <span class="num" onclick="calc.txt.number+='-'"><i>-</i></span>
+            <span class="num" onclick="calc.txt.number+='4'"><i>4</i></span>
+            <span class="num" onclick="calc.txt.number+='5'"><i>5</i></span>
+            <span class="num" onclick="calc.txt.number+='6'"><i>6</i></span>
+            <span class="num" onclick="calc.txt.number+='+'"><i>+</i></span>
+            <span class="num" onclick="calc.txt.number+='1'"><i>1</i></span>
+            <span class="num" onclick="calc.txt.number+='2'"><i>2</i></span>
+            <span class="num" onclick="calc.txt.number+='3'"><i>3</i></span>
+            <span class="num" onclick="calc.txt.number+='0'"><i>0</i></span>
+            <span class="num" onclick="document.calc.txt.number=eval(calc.txt.number)"><i>=</i></span>
+
+            
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
