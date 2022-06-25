@@ -21,11 +21,13 @@ body{
     padding: 40px 30px 30px;
     box-shadow: 25px 25px 75px rgba(0,0,0,0.25), 10px 10px 70px rgba(0,0,0,0.25), inset -5px -5px 15px rgba(0,0,0,0.5), inset 5px 5px 15px rgba(0,0,0,0.5);
 }
-.content{
+.calculator{
     position: relative;
     display: grid;
+    flex-wrap: wrap;
+
 }
-.content .number{
+.calculator .value{
     position: relative;
     grid-column: span 4;
     height: 100px;
@@ -43,10 +45,10 @@ body{
 span{
     color: white;
 }
-.content span{
+.calculator span{
     position: relative;
     display: grid;
-    place
+    place-items: center;
     width: 80px;
     height: 80px;
     margin: 8px;
@@ -57,7 +59,7 @@ span{
     cursor: pointer;
     font-weight: 400 ;
 }
-.content span::before{
+.calculator span::before{
     content: '';
     position: absolute;
     top:3px;
@@ -66,10 +68,40 @@ span{
     right: 12px;
     background: linear-gradient(90deg,#2d2d2d,#4d4d4d);
     border-radius: 10px;
+    box-shadow: -5px -5px 15px rgba(0,0,0,0.1), 10px 5px 10px rgba(0,0,0,0.15);
+    border-left: 1px solid #0004;
+    border-bottom: 1px solid #0004;
+    border-top: 1px solid #0004;
 }
-.content span i{
+.calculator span:active{
+    filter: brightness(1.5)
+}
+.calculator span i{
     position: relative;
     font-style: normal;
     font-size: 1.5cm;
     text-transform: uppercase;
+}
+.calculator .clear{
+    grid-column: span 2;
+    width: 180px;
+    background: red;
+}
+.calculator .clear::before{
+    background: linear-gradient(90deg,red,#ffffff5c);
+    border-left: 1px solid #fff4;
+    border-bottom: 1px solid #fff4;
+    border-top: 1px solid #fff4;
+}
+.calculator .plus{
+    grid-row: span 2;
+    height: 180px;
+}
+.calculator .equal{
+    grid-column: span 2;
+    width: 180px;   
+}
+.calculator .zero{
+    grid-column: span 2;
+    width: 190px;   
 }
