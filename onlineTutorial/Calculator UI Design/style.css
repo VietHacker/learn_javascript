@@ -25,7 +25,6 @@ body{
     position: relative;
     display: grid;
     flex-wrap: wrap;
-
 }
 .calculator .value{
     position: relative;
