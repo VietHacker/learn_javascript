@@ -23,8 +23,8 @@
     padding-left: 20px;
 }
 .web{
-    font-size: 20px;
-    color: salmon;
+    font-size: 27px;
+    color: red;
 }
 .button{
     display: flex;
@@ -94,21 +94,60 @@ a .title{
     width: 50px;
     /* min-width: 60px; */
     height: 50px;
-    background: green;
+    background: white;
+    /* border: 1px solid black; */
     border-radius: 50%;
+    box-shadow: 1px 2px 2px 2px black;
     cursor: pointer;
     display: flex;
     justify-content: center;
     align-items: center;
-    transition: 0.5s;
-    /* transform: translateY(660px); */
+    /* transition: 0.5s; */
+    transform: translate(650px,-20px);
+    text-decoration: none;
+    /* do thẻ a tự động gạch dưới nên phải bỏ gạch dưới bằng dòng trên */
 }
 .down::before{
-    content: "^";
+    content:"^";
     font-size: 70px;
-    color: white;
+    color: black;
     rotate: 180deg;
-    /* transform: translateY(660px); */
+    transition: 0;
+    /* transform: translate(); */
 }
-
-
+.title1{
+    color:#00BCD4; 
+    font-size: 27px;
+    font-weight: 800;
+}
+.content3{
+    margin-left: 70px;
+    padding:5px;
+}
+.word{
+    font-size: 20px;
+    line-height: 30px;
+    width: 360px;
+}
+.content4{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin-top: 500px;
+    background-color: gray;
+    height: 100px;
+}
+.word2{
+    width: 50%;
+    display: flex;
+    padding-left: 100px;
+    align-items: center;
+    margin-right: 300px;
+}
+.word3{
+    padding-left: 50px;
+}
+.fb{
+    color: black;
+    text-decoration: none;
+}
