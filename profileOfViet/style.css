@@ -5,7 +5,14 @@
     box-sizing: border-box;
     font-family: 'Anek Latin', sans-serif;
 }
+.container{
+    width: 100%;
+}
+.content{
+    width: 100%;
+}
 .head{
+    min-width: 100%;
     display: flex;
     align-items: left;
     justify-content: left;
@@ -16,7 +23,7 @@
     display: flex;
     align-items: left;
     justify-content: left;
-    width: 500px;
+    width: 50%;
     height: 50px;
     margin-right: 200px;
     padding: 15px;
@@ -28,8 +35,8 @@
 }
 .button{
     display: flex;
-    margin-right: 100px;
-    width: 150px;
+    margin-right: 10%;
+    width: 15%;
     height: 50px;
     align-items: center;
     justify-content: center;
@@ -117,12 +124,13 @@ a .title{
 }
 .title1{
     color:#00BCD4; 
-    font-size: 27px;
+    font-size: 50px;
     font-weight: 800;
 }
 .content3{
     margin-left: 70px;
     padding:5px;
+    line-height: 50px;
 }
 .word{
     font-size: 20px;
@@ -130,6 +138,7 @@ a .title{
     width: 360px;
 }
 .content4{
+    width: 100%;
     display: flex;
     justify-content: left;
     align-items: center;
@@ -142,12 +151,70 @@ a .title{
     display: flex;
     padding-left: 100px;
     align-items: center;
-    margin-right: 300px;
+    transform: translateX(950px);
 }
 .word3{
-    padding-left: 50px;
+    padding-left: 45px;
+    transform: translateX(-650px);
 }
 .fb{
     color: black;
     text-decoration: none;
+}
+.pic{
+    background-image: url(https://scontent.fsgn2-6.fna.fbcdn.net/v/t39.30808-1/294907748_580006216861929_1468448152924460701_n.jpg?stp=dst-jpg_p160x160&_nc_cat=100&ccb=1-7&_nc_sid=7206a8&_nc_ohc=lxj0vAwMh8sAX_xVKqN&_nc_ht=scontent.fsgn2-6.fna&oh=00_AT-KNZAa7KBwPqXrmvvWaUhb7FQ1t_SPQL4mQLvB2FFoRg&oe=62F96A1B);
+    /* border: 5px solid #00BCD4; */
+    border-radius: 10px;
+    width: 345px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(505px,-280px);
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+.word1{
+    transform: translate(40%, 18%);
+    font-size: 20px;
+    line-height: 30px;
+}
+.content5{
+    /* margin-left: 70px; */
+    margin: 0;
+    width: 100%;
+    padding:5px;
+    line-height: 50px;
+    transform: translate(43%,-15%); 
+}
+.pic1{
+    background-image: url(https://bom.so/uxwLhD);
+    /* border: 5px solid #00BCD4; */
+    border-radius: 34%;
+    width: 500px;
+    height: 350px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transform: translate(420px,-1200px);
+    box-shadow: 2px 2px 2px 2px lightgray;
+}
+.title2{
+    color:#00BCD4; 
+    font-size: 50px;
+    font-weight: 800;
+    width: 250px;
+    /* transform: translate(-200px, -220px); */
+}
+.word4{
+    transform: translate(-140%, -500%);
+    font-size: 20px;
+    line-height: 30px;
+    width: 360px;
+}
+.pic2{
+    background-image: url(http://taysondalat.edu.vn/uploads/news/2016_09/khaigiang/khai-giang-2016-2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 400px;
+    width: 500px;
+    transform: translate(420px,-1100px);
+    border-radius: 50%;
 }
